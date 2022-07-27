@@ -11,7 +11,7 @@ The members of the **Team Eagle Eyes** building this solution for the HYPERVIEW 
 * [Roshni Kamath](https://www.helmholtz.ai/themenmenue/our-research/consultant-teams/helmholtz-ai-consultants-fzj/index.html) - Helmholtz AI consultant @ Julich Supercomputing Centre (FZJ)
 * [Kai Konen](https://www.helmholtz.ai/themenmenue/our-research/consultant-teams/helmholtz-ai-consultants-dlr/index.html) - Helmholtz AI consultant @ German Aerospace Center (DLR)
 
-[The submission file]((challenge_submission_eagleeyes/hyperview-main-submission_eagleeyes.ipynb)) of the **Team Eagle Eyes** has improved upon the challange baseline by %21.9,
+[The submission file](challenge_submission_eagleeyes/hyperview-main-submission_eagleeyes.ipynb) of the **Team Eagle Eyes** has improved upon the challange baseline by %21.9,
 with the first place on the [public leader-board](https://platform.ai4eo.eu/seeing-beyond-the-visible/leaderboard). 
 For the further details, please refer to:
 
@@ -22,7 +22,7 @@ in 29th IEEE International Conference on Image Processing (IEEE ICIP 2022), Bord
 
 ## FOLDER STRUCTURE
 
-* The starter pack notebook provided by the Challenge Organization Committee is given under folder [challenge_official_starter_pack](challenge_official_starter_pack).
+* The starter pack notebook provided by the Challenge Organization Committee is given under folder [challenge_official_starter_pack](challenge_official_starter_pack/starter_pack.ipynb).
 * The final submission of the **Team Eagle Eyes** is given under folder [challenge_submission_eagleeyes](challenge_submission_eagleeyes).
 * The Vision Transformer (ViT-L/14) based soil parameter estimation experiments are given under folder [experimental_1](experimental_1).
 * The Swin Transformer (Swin-T) and other DNN based soil parameter estimation experiments are given under folder [experimental_2](experimental_2).
@@ -66,35 +66,34 @@ lightweight and improves upon the challenge baseline by 21.9%, with the
 first place on the public leaderboard. In addition, we discuss neural
 network architectures and potential future improvements.
 
-**Index Terms—** hyperspectral images, random forests, ar-
-tificial neural networks, soil parameter estimation, regression.
+**Index Terms—** hyperspectral images, random forests, artificial neural networks, soil parameter estimation, regression.
 
 ## 1. Introduction
 
-Machine learning methods are employed widely in remote sensing . In
+Machine learning methods are employed widely in remote sensing [[1]](https://www.tandfonline.com/doi/abs/10.1080/01431161.2018.1433343). In
 particular, agricultural monitoring via remote sensing draws significant
 attention for various purposes ranging from early forecasting of crop
-yield amount to the estimation of soil composite .
+yield amount [[2]](https://ieeexplore.ieee.org/abstract/document/9565348/) to the estimation of soil composite [[3]](https://www.degruyter.com/document/doi/10.1515/auto-2020-0042/html?lang=de).
 
 Predicting the fertility indicators of soil, such as percentage of
 organic matter, or amount of fertilizer, is one of the leading research
-topics in earth observation due to the emerging needs for improving the
+topics in earth observation [[4]](https://www.sciencedirect.com/science/article/pii/S0016706121004468?casa_token=1-rDwHUDdFUAAAAA:kKDu0GicjHoHFeVdnxvWyS3yregfe0_9Vrh_ceh3n5gSAN-JGUydFrYRYIVYKUVlV00l4ozm03b4) due to the emerging needs for improving the
 agricultural efficiency without harming nature. Particularly, the
 European Union Green Deal gives special importance to supporting
 conventional farming practices with earth observation (EO) and
 artificial intelligence (AI) for resilient production as well as healthy
-soil and biodiversity .
+soil and biodiversity [[5]](https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal/agriculture-and-green-deal_en).
 
-The AI4EO platform seeks to bridge the gap between the AI and EO
-communities . In the <span class="smallcaps">AI4EO Hyperview</span>
+The *AI4EO* platform seeks to bridge the gap between the AI and EO
+communities [[6]](https://ieeexplore.ieee.org/abstract/document/9553464/). In the *AI4EO Hyperview*
 challenge, the objective is to predict soil properties from
 hyperspectral satellite images, including potassium (K), magnesium (Mg),
 and phosphorus pentoxide (P<sub>2</sub>O<sub>5</sub>) content, and the
-pH value . The winning solution of the challenge will be running
-on-board the Intuition-1 satellite.
+pH value [[7]](https://platform.ai4eo.eu/seeing-beyond-the-visible). The winning solution of the challenge will be running
+on-board the *Intuition-1* satellite.
 
-In this manuscript, we present the solution to the <span class="smallcaps">AI4EO Hyperview</span> challenge developed by Team
-<span class="smallcaps">EagleEyes</span>. Section [2](#sec_data_set) discusses the
+In this manuscript, we present the solution to the *AI4EO Hyperview* challenge developed by Team
+*EagleEyes*. Section [2](#sec_data_set) discusses the
 hyperspectral image dataset, Section [3](#sec_methods) covers feature
 engineering and experimental protocols for different learning
 strategies, and Section [4](#sec_results) presents the preliminary
@@ -108,7 +107,7 @@ The hyperspectral images are taken from airborne measurements from an
 unspecified location in Poland. In total, 1732 patches are available for
 training, and 1154 patches remain for testing. Each patch contains
 150 hyperspectral bands, spanning 462 − 492 nm with a spectral
-resolution of 3.2 nm .
+resolution of 3.2 nm [[7]](https://platform.ai4eo.eu/seeing-beyond-the-visible).
 
 Samples in the dataset have been segmented into patches according to the
 boundaries of the agricultural fields. As shown in Figure
@@ -201,7 +200,7 @@ features from it. The list of the features is as follows:
     each, \[1×600\] in total),
 
 -   discrete wavelet transforms of *average reflectance* with Meyer
-    wavelet : 1<sup>*s**t*</sup>, 2<sup>*nd*</sup>,
+    wavelet [[8]](https://www.hpl.hp.com/hpjournal/94dec/dec94a6.pdf): 1<sup>*st*</sup>, 2<sup>*nd*</sup>,
     3<sup>*rd*</sup>, 4<sup>*th*</sup> level *approximation* and
     *detail* coefficients (\[1×300\] dims. in total),
     
@@ -213,7 +212,7 @@ diagonal values (*σ*<sub>1</sub>, *σ*<sub>2</sub>, *σ*<sub>3</sub>,
 *σ*<sub>4</sub>, *σ*<sub>5</sub> ∈ *Σ*) from each channel are selected
 as features (\[1×750\] dims. in total),
 
--   the ratio of 1<sup>*s**t*</sup>, 2<sup>*n**d*</sup> diagonals:
+-   the ratio of 1<sup>*st*</sup>, 2<sup>*nd*</sup> diagonals:
     *σ*<sub>1</sub>/*σ*<sub>2</sub> (\[1×150\] dims.),
 
 -   Fast Fourier transform (FFT) of *average reflectance* and FFT of
@@ -268,20 +267,20 @@ During development, classical machine learning approaches, such as
 Random Forest (RF), K-Nearest Neighbour (KNN) and eXtreme Gradient
 Boosting (XGBoost) regressors were investigated. Additionally, different
 neural network architectures were explored. Since the final solution is
-supposed to run on the Intuition-1 satellite, solutions that require low
+supposed to run on the *Intuition-1* satellite, solutions that require low
 computational resources are of special interest.
 
 #### 3.2.1. Classical machine learning architectures
 
-We used the <span class="smallcaps">RandomForestRegressor</span> (RF)
-and <span class="smallcaps">KNeighborsRegressor</span> (KNN) implemented
-in the scikit-learn package , as well as <span
-class="smallcaps">XGBoost</span> regressors. Since the latter does not
-support multiple-regression problems, the <span
-class="smallcaps">MultiOutputRegressor</span>, also from the
-scikit-learn package, was wrapped around the <span
-class="smallcaps">XGBoost</span>. For all model types, hyperparameter
-tuning was conducted using <span class="smallcaps">Optuna</span> with
+We used the *RandomForestRegressor* (RF)
+and *KNeighborsRegressor* (KNN) implemented
+in the [scikit-learn](https://scikit-learn.org/stable/) package [[9]](https://scikit-learn.org/stable/), as well as 
+*XGBoost* [[10]](https://www.researchgate.net/profile/Shatadeep-Banerjee/publication/318132203_Experimenting_XGBoost_Algorithm_for_Prediction_and_Classification_of_Different_Datasets/links/595b89b0458515117741a571/Experimenting-XGBoost-Algorithm-for-Prediction-and-Classification-of-Different-Datasets.pdf) regressors. Since the latter does not
+support multiple-regression problems, the 
+*MultiOutputRegressor*, also from the
+[scikit-learn](https://scikit-learn.org/stable/) package, was wrapped around the <span
+*XGBoost*. For all model types, hyperparameter
+tuning was conducted using *Optuna* [[11]](https://optuna.org/) with
 Bayesian optimization. However, we found the default parameters
 performed best and only changed the number of estimators to 1000. For
 all of our experiments, RFs perform better than the XGBoost and KNN
@@ -290,9 +289,13 @@ algorithms.
 #### 3.2.2. Deep Neural networks
 
 We experimented with various neural network architectures, including
-Transformers , MobileNets , CapsuleNets , multilayer perceptrons, as
-well as autoencoder architectures and attention networks, such as
-PSE+LTAE . To exploit the pretrained weights of the networks, we
+Transformers [[12]](http://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html)
+[[13]](http://proceedings.mlr.press/v139/radford21a), 
+MobileNets [[14]](https://arxiv.org/abs/1704.04861), 
+CapsuleNets [[15]](https://proceedings.neurips.cc/paper/2017/hash/2cad8fa47bbef282badbb8de5374b894-Abstract.html), multilayer perceptrons, as
+well as autoencoder architectures [[16]](https://ieeexplore.ieee.org/abstract/document/9222532/) 
+and attention networks, such as
+PSE+LTAE [[17]](https://link.springer.com/chapter/10.1007/978-3-030-65742-0_12). To exploit the pretrained weights of the networks, we
 experimented with several input modalities:
 
 -   channel-wise dimensional reduction from (*w* × *h* × 150) to
@@ -318,8 +321,8 @@ for the Transformers with the pretrained weights (ImageNet-21k for
 Swin-T and CLIP for ViT-L/14 ), when the channel-wise dimensional
 reduction operation was attached to it as an input layer.
 
-For designing those experiments, we used the Keras framework with
-Tensorflow version 2.8.0 and the Pytorch framework version 1.10.0 .
+For designing those experiments, we used the *Keras* framework with
+*Tensorflow* version 2.8.0 [[18]](https://www.tensorflow.org/) and the *Pytorch* framework version 1.10.0 [[19]](https://pytorch.org/).
 
 ### 3.3. Evaluation Metrics
 
@@ -351,7 +354,7 @@ leaderboard of the challenge are:
 
 The models show comparable performance, however, the RF is
 computationally more lightweight. Since this would be advantageous for
-running the model on the target Intuition-1 satelite, we selected the RF
+running the model on the target *Intuition-1* satellite, we selected the RF
 for further optimization.
 
 As summarized in Table [1](#TAB_random_forest_scores), the average of
@@ -499,17 +502,18 @@ alt="Feature importance weights for RF regressor." />
 </figure>
 <p align="center">
 <strong style="color: orange; opacity: 0.80;">
-Figure 5: Feature importance weights for RF regressor..</strong>
+Figure 5: Feature importance weights for RF regressor.</strong>
 </p>
 </div>
 
+&nbsp;
+<br />
 
 <div class="center">
 <figure>
 <p align="center">
 <img src="/challenge_submission_eagleeyes/feature_examples/channel_weights.png" id="FIG_channel_weights"
 alt="Hyperspectral band importances for RF regressor." />
-
 </p>
 </figure>
 <p align="center">
