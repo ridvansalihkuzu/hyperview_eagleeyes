@@ -367,8 +367,9 @@ and P<sub>2</sub>O<sub>5</sub> is predicted worst (0.874).
 Table 1: Cross validation with RF (the lower score is better).</strong>
 </p>
 <div class="adjustbox">
-<div id="TAB_random_forest_scores">
 <p align="center">
+<div id="TAB_random_forest_scores">
+
 <table>
 <thead>
 <tr class="header">
@@ -471,8 +472,9 @@ style="text-align: center;"><strong>0.79476</strong></td>
 </tr>
 </tbody>
 </table>
-</p>
+
 </div>
+</p>
 </div>
 
 
