@@ -112,7 +112,7 @@ resolution of 3.2 nm .
 
 Samples in the dataset have been segmented into patches according to the
 boundaries of the agricultural fields. As shown in Figure
-[1](FIG_field_distribution), the patch size distribution is skewed:
+[1](#FIG_field_distribution), the patch size distribution is skewed:
 About one third of the samples is composed of 11 × 11 px patches, and
 60% of the patches are less than 50 px wide.
 
@@ -136,7 +136,6 @@ skewness, while the Mg and pH values are more Gaussian distributed.
 Besides, pH measurements are mostly clustered in the intervals of 0.1.
 
 <div class="center">
-<a id="FIG_field_distribution" />
 <figure>
 <img src="figures/target_distribution.png" id="FIG:target_distribution"
 alt="Distribution of target values for each soil parameter." />
