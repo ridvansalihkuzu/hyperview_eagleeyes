@@ -278,7 +278,7 @@ in the [scikit-learn](https://scikit-learn.org/stable/) package [[9]](https://sc
 *XGBoost* [[10]](https://www.researchgate.net/profile/Shatadeep-Banerjee/publication/318132203_Experimenting_XGBoost_Algorithm_for_Prediction_and_Classification_of_Different_Datasets/links/595b89b0458515117741a571/Experimenting-XGBoost-Algorithm-for-Prediction-and-Classification-of-Different-Datasets.pdf) regressors. Since the latter does not
 support multiple-regression problems, the 
 *MultiOutputRegressor*, also from the
-[scikit-learn](https://scikit-learn.org/stable/) package, was wrapped around the <span
+[scikit-learn](https://scikit-learn.org/stable/) package, was wrapped around the
 *XGBoost*. For all model types, hyperparameter
 tuning was conducted using *Optuna* [[11]](https://optuna.org/) with
 Bayesian optimization. However, we found the default parameters
