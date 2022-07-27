@@ -225,9 +225,9 @@ and target values.
 
 <div class="figure*">
 <figure>
-id="FIG_feature_engineering"
 <p align="center">
-<img src="/challenge_submission_team_eagleeyes/feature_examples/1st_derivative.png" width="400"  alt="image" />
+
+<img src="/challenge_submission_team_eagleeyes/feature_examples/1st_derivative.png" width="400" id="FIG_feature_engineering" alt="image" />
 
 <img src="/challenge_submission_team_eagleeyes/feature_examples/wavelet_approximation.png" width="400"  alt="image" />
 
@@ -238,7 +238,7 @@ id="FIG_feature_engineering"
 </figure>
 </div>
 <center><strong style="color: orange; opacity: 0.80;">
-Figure 3: Selected additional features derived from the agricultural field patches (explanations are given in Section 3.1).</strong></center>
+Figure 3: Selected additional features derived from the agricultural field patches.</strong></center>
 
 &nbsp;
 <br />
