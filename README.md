@@ -129,8 +129,7 @@ alt="Distribution of dataset in terms of different patch sizes." />
 </div>
 
 
-<strong style="color: orange; opacity: 0.80;>
-Figure 1: Distribution of dataset in terms of different patch sizes.</strong>
+<strong style="color: orange; opacity: 0.80;">Figure 1: Distribution of dataset in terms of different patch sizes.</strong>
 
 
 
