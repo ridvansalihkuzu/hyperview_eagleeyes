@@ -158,9 +158,9 @@ In this section, we present the feature engineering approaches,
 experimental protocols for different learning strategies and metrics
 utilized for validating our approach.
 
-### Data Processing and Augmentation
+### <a id="sec_data_aug" /> 3.1. Data Processing and Augmentation
 
-#### Feature engineering for traditional ML approaches
+#### 3.1.1. Feature engineering for traditional ML approaches
 
 As mentioned in Section [2](#sec_data_set), the samples are
 3-dimensional patches with dimension (*w* × *h* × *c*) where width
@@ -219,11 +219,13 @@ as features (\[1×750\] dims. in total),
 
 To sum up, for each field patch, a \[1×2400\] dimensional feature array
 is extracted. Some of those features for different agricultural fields
-are illustrated in Figure [4][fig_feature_engineering]. For data
+are illustrated in Figure [4](#FIG_feature_engineering). For data
 augmentation, 1% random Gaussian noise is added to both input features
 and target values.
 
 <div class="figure*">
+<figure>
+id="FIG_feature_engineering"
 <p align="center">
 <img src="/challenge_submission_team_eagleeyes/feature_examples/1st_derivative.png" width="400"  alt="image" />
 
@@ -233,9 +235,15 @@ and target values.
 
 <img src="/challenge_submission_team_eagleeyes/feature_examples/fft_s0_real.png" width="400"  alt="image" />
 </p>
+</figure>
 </div>
+<center><strong style="color: orange; opacity: 0.80;">
+Figure 3: Selected additional features derived from the agricultural field patches (explanations are given in Section 3.1).</strong></center>
 
-#### Feature engineering for deep learning approaches
+&nbsp;
+<br />
+
+#### 3.1.2. Feature engineering for deep learning approaches
 
 For experimenting on neural networks, either a raw patch,
 *P*<sub>(*w*×*h*×*c*)</sub>, or random patch subsets or pixel subsets
@@ -248,7 +256,7 @@ data normalization techniques, including min-max scaling, standard
 scaling, and robust scaling.
 
 
-### Exploited Models
+### 3.2. Exploited Models
 
 During development, classical machine learning approaches, such as
 Random Forest (RF), K-Nearest Neighbour (KNN) and eXtreme Gradient
@@ -257,7 +265,7 @@ neural network architectures were explored. Since the final solution is
 supposed to run on the Intuition-1 satellite, solutions that require low
 computational resources are of special interest.
 
-#### Classical machine learning architectures
+#### 3.2.1. Classical machine learning architectures
 
 We used the <span class="smallcaps">RandomForestRegressor</span> (RF)
 and <span class="smallcaps">KNeighborsRegressor</span> (KNN) implemented
@@ -273,7 +281,7 @@ performed best and only changed the number of estimators to 1000. For
 all of our experiments, RFs perform better than the XGBoost and KNN
 algorithms.
 
-#### Deep Neural networks
+#### 3.2.2. Deep Neural networks
 
 We experimented with various neural network architectures, including
 Transformers , MobileNets , CapsuleNets , multilayer perceptrons, as
@@ -307,7 +315,7 @@ reduction operation was attached to it as an input layer.
 For designing those experiments, we used the Keras framework with
 Tensorflow version 2.8.0 and the Pytorch framework version 1.10.0 .
 
-### Evaluation Metrics
+### 3.3. Evaluation Metrics
 
 The evaluation metric takes into account the improvement upon the
 baseline of predicting the average of each soil parameter
