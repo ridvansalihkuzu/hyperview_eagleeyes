@@ -128,12 +128,8 @@ alt="Distribution of dataset in terms of different patch sizes." />
 </figure>
 </div>
 
-<style>
-red { color: red }
-yellow { color: yellow }
-</style>
 
-<center><red>Figure 1: Distribution of dataset in terms of different patch sizes.</red></center>
+<center><strong style="color: orange; opacity: 0.80;">Figure 1: Distribution of dataset in terms of different patch sizes.</strong></center>
 
 
 The training data provides ground truth for all four soil parameters.
