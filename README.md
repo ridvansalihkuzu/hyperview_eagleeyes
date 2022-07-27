@@ -365,9 +365,9 @@ and P<sub>2</sub>O<sub>5</sub> is predicted worst (0.874).
 <p align="center">
 <strong style="color: orange; opacity: 0.80;">
 Table 1: Cross validation with RF (the lower score is better).</strong>
-
+</p>
 <div class="adjustbox">
-
+<p align="center">
 <div id="TAB_random_forest_scores">
 
 |            **Field Edge (pixel)**            | **\# of Fields** |  **P2O5**   |   **K**   |  **Mg**   |  **pH**   | **Average** |
@@ -384,8 +384,9 @@ Table 1: Cross validation with RF (the lower score is better).</strong>
 
 
 </div>
-</div>
 </p>
+</div>
+
 
 For the RF regression, the feature importance can be determined.
 Figure [\[FIG:feature-weights\]][1] shows the derivatives of the average
