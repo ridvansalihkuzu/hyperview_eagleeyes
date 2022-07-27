@@ -366,6 +366,7 @@ and P<sub>2</sub>O<sub>5</sub> is predicted worst (0.874).
 <strong style="color: orange; opacity: 0.80;">
 Table 1: Cross validation with RF (the lower score is better).</strong>
 </p>
+
 <div align="center">
 <p align="center">
 <div id="TAB_random_forest_scores">
@@ -477,29 +478,52 @@ style="text-align: center;"><strong>0.79476</strong></td>
 </p>
 </div>
 
+&nbsp;
+<br />
 
 For the RF regression, the feature importance can be determined.
-Figure [\[FIG:feature-weights\]][1] shows the derivatives of the average
+Figure [5](#FIG_feature_weights) shows the derivatives of the average
 spectral reflectance contribute the most, followed by the features
-derived from SVD and FFT. Figure [\[FIG:channel-weights\]][2] shows the
+derived from SVD and FFT. Figure [6](#FIG_channel_weights) shows the
 importance of the spectral bands. The bands in the 650 − 670 nm, and
 those exceeding 850 nm are considered to be most important.
 
 
 <div class="center">
-
 <figure>
-<img src="figures/channel_weights.png" id="FIG:channel-weights"
-alt="Hyperspectral band importances for RF regressor." />
-<figcaption aria-hidden="true">Hyperspectral band importances for RF
-regressor.</figcaption>
-</figure>
+<p align="center">
+<img src="/challenge_submission_team_eagleeyes/feature_examples/feature_weights.png" id="FIG_feature_weights"
+alt="Feature importance weights for RF regressor." />
 
+</p>
+</figure>
+<p align="center">
+<strong style="color: orange; opacity: 0.80;">
+Figure 5: Feature importance weights for RF regressor..</strong>
+</p>
 </div>
+
+
+<div class="center">
+<figure>
+<p align="center">
+<img src="/challenge_submission_team_eagleeyes/feature_examples/channel_weights.png" id="FIG_channel_weights"
+alt="Hyperspectral band importances for RF regressor." />
+
+</p>
+</figure>
+<p align="center">
+<strong style="color: orange; opacity: 0.80;">
+Figure 6: Hyperspectral band importances for RF regressor.</strong>
+</p>
+</div>
+
+&nbsp;
+<br />
 
 In order to analyze if the data skewness affects performance, the
 prediction scores are reported for different patch sizes in Table
-[\[TAB:random-forest-scores\]][1]. Thus, we observe that the smaller
+[1](#TAB_random_forest_scores). Thus, we observe that the smaller
 patches ( ≤ 11 × 11 px) are the major source of the prediction error.
 This might stem from the higher variations in channel-aggregation due to
 a lower number of pixels. For mitigating this error source, alternative
@@ -508,27 +532,71 @@ patches. KNN regression with *k* ≥ 35 improved performance on the
 smaller patches (from 0.985 to 0.915) but, on the other hand, it
 performs worse than RF on larger patches.
 
-<div class="adjustbox">
 
-width=1
+<p align="center">
+<strong style="color: orange; opacity: 0.80;">
+Table 2: Cross validation with hybrid regressor (RF + KNN).</strong>
+</p>
 
-<div id="TAB:hybrid-scores">
 
-|            **Field Edge (pixel)**            | **Model**  |  **P2O5**   |   **K**   |  **Mg**   |  **pH**   | **Average** |
-|:--------------------------------------------:|:----------:|:-----------:|:---------:|:---------:|:---------:|:-----------:|
-|                   **0-11**                   |    KNN     |    1.002    |   0.953   |   0.993   |   0.710   |    0.915    |
-|                   **11+**                    |     RF     |    0.766    |   0.720   |   0.564   |   0.772   |    0.706    |
-|              **Entire Fields**               | **Hybrid** |  **0.855**  | **0.807** | **0.725** | **0.749** |  **0.793**  |
-
-Cross validation with hybrid regressor (RF + KNN).
-
+<div align="center">
+<p align="center">
+<div id="TAB_random_forest_scores_hybrid">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Field Edge (pixel)</strong></th>
+<th style="text-align: center;"><strong>Model</strong></th>
+<th style="text-align: center;"><strong>P2O5</strong></th>
+<th style="text-align: center;"><strong>K</strong></th>
+<th style="text-align: center;"><strong>Mg</strong></th>
+<th style="text-align: center;"><strong>pH</strong></th>
+<th style="text-align: center;"><strong>Average</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>0-11</strong></td>
+<td style="text-align: center;">KNN</td>
+<td style="text-align: center;">1.002</td>
+<td style="text-align: center;">0.953</td>
+<td style="text-align: center;">0.993</td>
+<td style="text-align: center;">0.710</td>
+<td style="text-align: center;">0.915</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>11+</strong></td>
+<td style="text-align: center;">RF</td>
+<td style="text-align: center;">0.766</td>
+<td style="text-align: center;">0.720</td>
+<td style="text-align: center;">0.564</td>
+<td style="text-align: center;">0.772</td>
+<td style="text-align: center;">0.706</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Entire Fields</strong></td>
+<td style="text-align: center;"><strong>Hybrid</strong></td>
+<td style="text-align: center;"><strong>0.855</strong></td>
+<td style="text-align: center;"><strong>0.807</strong></td>
+<td style="text-align: center;"><strong>0.725</strong></td>
+<td style="text-align: center;"><strong>0.749</strong></td>
+<td style="text-align: center;"><strong>0.793</strong></td>
+</tr>
+<tr class="even">
+<td colspan="2" style="text-align: center;"><strong>Public Leaderboard
+Score on the Test Set</strong></td>
+<td colspan="5"
+style="text-align: center;"><strong>0.78113</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
-
+</p>
 </div>
 
 
 Therefore, a hybrid soil paramater estimator is proposed, combining KNN
-and RF regressors. Table [\[TAB:hybrid-scores\]][1] summarizes the
+and RF regressors. Table [2](#TAB_random_forest_scores_hybrid) summarizes the
 performance of the hybrid model in which KNN predicts the soil
 parameters for smaller fields (mean edge length  ≤ 11 px), while RF
 makes predictions for larger fields (mean edge length  \> 11 px). Thus,
@@ -537,21 +605,24 @@ cross-validation performance on training set has been improved from
 position in the public leaderboard by outperforming our former RF
 regressor (from 0.79476 to 0.78113).
 
-Figure [1][] shows density plots of the true vs the predicted soil
+Figure [7](#FIG_pred_vs_target) shows density plots of the true vs the predicted soil
 parameters for the validation set. For all target variables, average
 values are predicted close to the 1 : 1 line, while extreme values are
 hard to estimate correctly.
 
 <div class="center">
-
 <figure>
-<img src="figures/out_prediction.png" id="FIG:pred-vs-target"
+<img src="/challenge_submission_team_eagleeyes/feature_examples/out_prediction.png" id="FIG_pred_vs_target"
 alt="Ground-truths vs predicted soil parameters." />
-<figcaption aria-hidden="true">Ground-truths vs predicted soil
-parameters.</figcaption>
 </figure>
-
 </div>
+<p align="center">
+<strong style="color: orange; opacity: 0.80;">
+Figure 7: Ground-truths vs predicted soil parameters.</strong>
+</p>
+
+&nbsp;
+<br />
 
 ## 5. <a id="sec_discussion" /> Conclusion and Future Work 
 
