@@ -112,14 +112,14 @@ resolution of 3.2 nm .
 
 Samples in the dataset have been segmented into patches according to the
 boundaries of the agricultural fields. As shown in Figure
-[1](FIG:field_distribution), the patch size distribution is skewed:
+[1](FIG_field_distribution), the patch size distribution is skewed:
 About one third of the samples is composed of 11 × 11 px patches, and
 60% of the patches are less than 50 px wide.
 
 <div class="center">
 
 <figure>
-<img src="/challenge_submission_team_eagleeyes/feature_examples/field_distribution.png" id="FIG:field_distribution"
+<img src="/challenge_submission_team_eagleeyes/feature_examples/field_distribution.png" id="FIG_field_distribution"
 alt="Distribution of dataset in terms of different patch sizes." />
 <figcaption aria-hidden="true"> Figure 1: Distribution of dataset in terms of
 different patch sizes.</figcaption>
