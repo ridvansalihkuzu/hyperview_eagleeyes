@@ -127,7 +127,9 @@ About one third of the samples is composed of 11 × 11 px patches, and
 alt="Distribution of dataset in terms of different patch sizes." />
 </figure>
 </div>
-<center><strong style="color: orange; opacity: 0.80;">Figure 1: Distribution of dataset in terms of different patch sizes.</strong></center>
+<p align="center">
+<strong style="color: orange; opacity: 0.80;">Figure 1: Distribution of dataset in terms of different patch sizes.</strong>
+</p>&nbsp;
 
 &nbsp;
 <br />
@@ -146,11 +148,13 @@ Besides, pH measurements are mostly clustered in the intervals of 0.1.
 alt="Distribution of target values for each soil parameter." />
 </figure>
 </div>
-<center><strong style="color: orange; opacity: 0.80;">Figure 2: Distribution of target values for each
-soil parameter.</strong></center>
+<p align="center">
+<strong style="color: orange; opacity: 0.80;">Figure 2: Distribution of target values for each
+soil parameter.</strong>
+</p>&nbsp;
+
 &nbsp;
 <br />
-
 
 ## <a id="sec_methods" /> 3. Experimental Framework 
 
@@ -177,11 +181,11 @@ alt="Comparison of average reflectance for different agricultural fields for eac
 </p>
 </figure>
 </div>
-
-<center><strong style="color: orange; opacity: 0.80;">
+<p align="center">
+<strong style="color: orange; opacity: 0.80;">
 Figure 3: Comparison of average reflectance for
-different agricultural fields for each soil parameter.</strong></center>
-
+different agricultural fields for each soil parameter.</strong>
+</p>
 &nbsp;
 <br />
 
