@@ -649,5 +649,21 @@ the Helmholtz Association’s Initiative and Networking Fund through
 Helmholtz AI \[grant number: ZT-I-PF-5-01\] and on the HAICORE@FZJ
 partition.
 
+## Citation
+
+In order to cite this study:
+```
+@inproceedings{helmholtz_hyperview_2022,
+  title={Predicting Soil Parameters from Hyperspectral Images},
+  author={Albrecht, Frauke and Arnold, Caroline  and Kamath, Roshni and Konen, Kai and Kuzu, Ridvan Salih},
+  booktitle={2022 29th IEEE International Conference on Image Processing (ICIP)},
+  pages={1--4},
+  year={2022},
+  organization={IEEE}
+}
+```
+
+
+
 
 
