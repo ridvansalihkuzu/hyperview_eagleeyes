@@ -123,13 +123,13 @@ About one third of the samples is composed of 11 × 11 px patches, and
 
 <div class="center">
 
-
+<span style="color:orange;">
 <figure>
 <img src="/challenge_submission_team_eagleeyes/feature_examples/field_distribution.png" id="FIG_field_distribution"
 alt="Distribution of dataset in terms of different patch sizes." />
-<span style="color:orange;"><figcaption aria-hidden="true"> Figure 1: Distribution of dataset in terms of
-different patch sizes.</figcaption></span>
-</figure>
+<figcaption aria-hidden="true"> Figure 1: Distribution of dataset in terms of
+different patch sizes.</figcaption>
+</figure></span>
 </div>
 
 
