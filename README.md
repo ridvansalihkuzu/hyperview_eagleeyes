@@ -129,6 +129,7 @@ alt="Distribution of dataset in terms of different patch sizes." />
 </div>
 <center><strong style="color: orange; opacity: 0.80;">Figure 1: Distribution of dataset in terms of different patch sizes.</strong></center>
 
+&nbsp;
 <br />
 
 The training data provides ground truth for all four soil parameters.
@@ -147,6 +148,8 @@ alt="Distribution of target values for each soil parameter." />
 </div>
 <center><strong style="color: orange; opacity: 0.80;">Figure 2: Distribution of target values for each
 soil parameter.</strong></center>
+
+&nbsp;
 <br />
 
 
