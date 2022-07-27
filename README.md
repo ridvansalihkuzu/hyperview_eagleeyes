@@ -238,8 +238,8 @@ and target values.
 </figure>
 </div>
 <p align="center">
-<center><strong style="color: orange; opacity: 0.80;">
-Figure 4: Selected additional features derived from the agricultural field patches.</strong></center>
+<strong style="color: orange; opacity: 0.80;">
+Figure 4: Selected additional features derived from the agricultural field patches.</strong>
 </p>
 
 &nbsp;
