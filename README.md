@@ -94,7 +94,7 @@ pH value . The winning solution of the challenge will be running
 on-board the Intuition-1 satellite.
 
 In this manuscript, we present the solution to the <span class="smallcaps">AI4EO Hyperview</span> challenge developed by Team
-<span class="smallcaps">EagleEyes</span>. Section [2](#sec:data-set) discusses the
+<span class="smallcaps">EagleEyes</span>. Section [2](#sec_data_set) discusses the
 hyperspectral image dataset, Section [3](#sec:methods) covers feature
 engineering and experimental protocols for different learning
 strategies, and Section [4](#sec:results) presents the preliminary
@@ -102,7 +102,7 @@ performance results for predicting the given four soil properties.
 Eventually, we conclude in Section [5](#sec:discussion) and give an
 outlook on future work.
 
-## 2. Dataset <a name="sec:data-set"></a> 
+## <a id="sec_data_set" /> 2. Dataset  
 
 The hyperspectral images are taken from airborne measurements from an
 unspecified location in Poland. In total, 1732 patches are available for
