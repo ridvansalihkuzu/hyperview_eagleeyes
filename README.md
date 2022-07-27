@@ -17,13 +17,13 @@ For the further details, please refer to:
 
 <a id="1">[1]</a> 
 Albrecht, F., Arnold, C., Kamath, R.,Konen, K., Kuzu, R.S. (2022), 
-[Predicting Soil Parameters from Hyperspectral Satellite Images](challenge_submission_team_eagleeyes/hyperview_for_ICIP_camera_ready_eagleeyes.pdf), 
+[Predicting Soil Parameters from Hyperspectral Satellite Images](challenge_submission_eagleeyes/hyperview_for_ICIP_camera_ready_eagleeyes.pdf), 
 in 29th IEEE International Conference on Image Processing (IEEE ICIP 2022), Bordeaux, France.
 
 ## FOLDER STRUCTURE
 
 * The starter pack notebook provided by the Challenge Organization Committee is given under folder [challenge_official_starter_pack](challenge_official_starter_pack).
-* The final submission of the **Team Eagle Eyes** is given under folder [challenge_submission_team_eagleeyes](challenge_submission_team_eagleeyes).
+* The final submission of the **Team Eagle Eyes** is given under folder [challenge_submission_team_eagleeyes](challenge_submission_eagleeyes).
 * The Vision Transformer (ViT-L/14) based soil parameter estimation experiments are given under folder [experimental_1](experimental_1).
 * The Swin Transformer (Swin-T) and other DNN based soil parameter estimation experiments are given under folder [experimental_2](experimental_2).
 * The Random Forest and other classical machine learning based soil parameter estimation experiments are given under folder [experimental_3](experimental_3).
@@ -54,7 +54,7 @@ in order to run them.
 
 ## THE APPROACH
 
-### Abstract
+## Abstract
 The <span class="smallcaps">AI4EO Hyperview</span> challenge seeks
 machine learning methods that predict agriculturally relevant soil
 parameters (K, Mg, P<sub>2</sub>O<sub>5</sub>, pH) from airborne
@@ -366,24 +366,111 @@ and P<sub>2</sub>O<sub>5</sub> is predicted worst (0.874).
 <strong style="color: orange; opacity: 0.80;">
 Table 1: Cross validation with RF (the lower score is better).</strong>
 </p>
-<div class="adjustbox" align="center">
-<div id="TAB_random_forest_scores" align="center">
-
-|            **Field Edge (pixel)**            | **\# of Fields** |  **P2O5**   |   **K**   |  **Mg**   |  **pH**   | **Average** |
-|:--------------------------------------------:|:----------------:|:-----------:|:---------:|:---------:|:---------:|:-----------:|
-|                   **0-11**                   |       650        |    1.050    |   1.008   |   1.019   |   0.866   |    0.985    |
-|                  **11-40**                   |        94        |    0.491    |   0.581   |   0.539   |   0.981   |    0.648    |
-|                  **40-50**                   |       326        |    0.724    |   0.754   |   0.416   |   0.777   |    0.668    |
-|                  **50-100**                  |       138        |    0.683    |   0.660   |   0.618   |   0.749   |    0.677    |
-|                 **100-110**                  |       113        |    0.911    |   0.591   |   0.398   |   0.764   |    0.665    |
-|                 **110-120**                  |       118        |    0.883    |   0.812   |   0.614   |   0.731   |    0.760    |
-|                 **120-130**                  |       132        |    0.895    |   0.776   |   0.644   |   0.656   |    0.742    |
-|                   **130+**                   |       161        |    0.808    |   0.761   |   0.842   |   0.790   |    0.801    |
-|              **Entire Fields**               |     **1732**     |  **0.874**  | **0.828** | **0.734** | **0.807** |  **0.811**  |
-
-
+<div class="adjustbox">
+<div id="TAB_random_forest_scores">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Field Edge (pixel)</strong></th>
+<th style="text-align: center;"><strong># of Fields</strong></th>
+<th style="text-align: center;"><strong>P2O5</strong></th>
+<th style="text-align: center;"><strong>K</strong></th>
+<th style="text-align: center;"><strong>Mg</strong></th>
+<th style="text-align: center;"><strong>pH</strong></th>
+<th style="text-align: center;"><strong>Average</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>0-11</strong></td>
+<td style="text-align: center;">650</td>
+<td style="text-align: center;">1.050</td>
+<td style="text-align: center;">1.008</td>
+<td style="text-align: center;">1.019</td>
+<td style="text-align: center;">0.866</td>
+<td style="text-align: center;">0.985</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>11-40</strong></td>
+<td style="text-align: center;">94</td>
+<td style="text-align: center;">0.491</td>
+<td style="text-align: center;">0.581</td>
+<td style="text-align: center;">0.539</td>
+<td style="text-align: center;">0.981</td>
+<td style="text-align: center;">0.648</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>40-50</strong></td>
+<td style="text-align: center;">326</td>
+<td style="text-align: center;">0.724</td>
+<td style="text-align: center;">0.754</td>
+<td style="text-align: center;">0.416</td>
+<td style="text-align: center;">0.777</td>
+<td style="text-align: center;">0.668</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>50-100</strong></td>
+<td style="text-align: center;">138</td>
+<td style="text-align: center;">0.683</td>
+<td style="text-align: center;">0.660</td>
+<td style="text-align: center;">0.618</td>
+<td style="text-align: center;">0.749</td>
+<td style="text-align: center;">0.677</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>100-110</strong></td>
+<td style="text-align: center;">113</td>
+<td style="text-align: center;">0.911</td>
+<td style="text-align: center;">0.591</td>
+<td style="text-align: center;">0.398</td>
+<td style="text-align: center;">0.764</td>
+<td style="text-align: center;">0.665</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>110-120</strong></td>
+<td style="text-align: center;">118</td>
+<td style="text-align: center;">0.883</td>
+<td style="text-align: center;">0.812</td>
+<td style="text-align: center;">0.614</td>
+<td style="text-align: center;">0.731</td>
+<td style="text-align: center;">0.760</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>120-130</strong></td>
+<td style="text-align: center;">132</td>
+<td style="text-align: center;">0.895</td>
+<td style="text-align: center;">0.776</td>
+<td style="text-align: center;">0.644</td>
+<td style="text-align: center;">0.656</td>
+<td style="text-align: center;">0.742</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>130+</strong></td>
+<td style="text-align: center;">161</td>
+<td style="text-align: center;">0.808</td>
+<td style="text-align: center;">0.761</td>
+<td style="text-align: center;">0.842</td>
+<td style="text-align: center;">0.790</td>
+<td style="text-align: center;">0.801</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Entire Fields</strong></td>
+<td style="text-align: center;"><strong>1732</strong></td>
+<td style="text-align: center;"><strong>0.874</strong></td>
+<td style="text-align: center;"><strong>0.828</strong></td>
+<td style="text-align: center;"><strong>0.734</strong></td>
+<td style="text-align: center;"><strong>0.807</strong></td>
+<td style="text-align: center;"><strong>0.811</strong></td>
+</tr>
+<tr class="even">
+<td colspan="2" style="text-align: center;"><strong>Public Leaderboard
+Score on the Test Set</strong></td>
+<td colspan="5"
+style="text-align: center;"><strong>0.79476</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
-
 </div>
 
 
