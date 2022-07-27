@@ -201,10 +201,7 @@ features from it. The list of the features is as follows:
     3<sup>*r**d*</sup>, 4<sup>*t**h*</sup> level *approximation* and
     *detail* coefficients (\[1×300\] dims. in total),
 
--   for each channel (*c*) of a field patch (*P*), singular value
-decomposition (SVD) has been conducted:  
-$P\_{(w \\times h)} &= U \\Sigma V^{T}$, in which *Σ* is square diagonal
-of size \[*r*×*r*\] where *r* ≤ *m**i**n*{*w*, *h*}. The first 5
+-   for each channel (*c*) of a field patch (*P*), singular value decomposition (SVD) has been conducted: $P\_{(w \\times h)} &= U \\Sigma V^{T}$, in which *Σ* is square diagonal of size \[*r*×*r*\] where *r* ≤ *m**i**n*{*w*, *h*}. The first 5
 diagonal values (*σ*<sub>1</sub>, *σ*<sub>2</sub>, *σ*<sub>3</sub>,
 *σ*<sub>4</sub>, *σ*<sub>5</sub> ∈ *Σ*) from each channel are selected
 as features (\[1×750\] dims. in total),
