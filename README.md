@@ -262,7 +262,7 @@ data normalization techniques, including min-max scaling, standard
 scaling, and robust scaling.
 
 
-### 3.2. Exploited Models
+### <a id="sec_exploited_models" /> 3.2. Exploited Models
 
 During development, classical machine learning approaches, such as
 Random Forest (RF), K-Nearest Neighbour (KNN) and eXtreme Gradient
@@ -340,7 +340,7 @@ $$\\mathrm{MSE\_{algo}}^{(i)}
 ## <a id="sec_results" /> 4. Results and Discussion 
 
 Among our experiments listed in Section
-[\[SUBSEC:exploited-models\]][1], the best performing ones on the public
+[3.2](#sec_exploited_models), the best performing ones on the public
 leaderboard of the challenge are:
 
 -   RF regression, by achieving 0.79476
@@ -354,7 +354,7 @@ computationally more lightweight. Since this would be advantageous for
 running the model on the target Intuition-1 satelite, we selected the RF
 for further optimization.
 
-As summarized in Table [\[TAB:random-forest-scores\]][2], the average of
+As summarized in Table [1](#TAB_random_forest_scores), the average of
 5-fold cross validation on the training set with RF yields a validation
 score of 0.811. Note that while we improve on the baseline for all four
 soil parameters, the performance varies. Mg is predicted best (0.734),
@@ -362,12 +362,13 @@ and P<sub>2</sub>O<sub>5</sub> is predicted worst (0.874).
 
 
 
+<p align="center">
+<strong style="color: orange; opacity: 0.80;">
+Table 1: Cross validation with RF (the lower score is better).</strong>
 
 <div class="adjustbox">
 
-width=1
-
-<div id="TAB:random-forest-scores">
+<div id="TAB_random_forest_scores">
 
 |            **Field Edge (pixel)**            | **\# of Fields** |  **P2O5**   |   **K**   |  **Mg**   |  **pH**   | **Average** |
 |:--------------------------------------------:|:----------------:|:-----------:|:---------:|:---------:|:---------:|:-----------:|
@@ -381,11 +382,10 @@ width=1
 |                   **130+**                   |       161        |    0.808    |   0.761   |   0.842   |   0.790   |    0.801    |
 |              **Entire Fields**               |     **1732**     |  **0.874**  | **0.828** | **0.734** | **0.807** |  **0.811**  |
 
-Cross validation with RF (the lower score is better).
 
 </div>
-
 </div>
+</p>
 
 For the RF regression, the feature importance can be determined.
 Figure [\[FIG:feature-weights\]][1] shows the derivatives of the average
