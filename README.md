@@ -181,6 +181,7 @@ alt="Comparison of average reflectance for different agricultural fields for eac
 <center><strong style="color: orange; opacity: 0.80;">
 Figure 3: Comparison of average reflectance for
 different agricultural fields for each soil parameter.</strong></center>
+
 &nbsp;
 <br />
 
@@ -191,8 +192,8 @@ for different values of the target variable. Thus, we use the average
 reflectance as a base feature in our experiments, and derive additional
 features from it. The list of the features is as follows:
 
--   *average reflectance*, its 1<sup>*s**t*</sup>, 2<sup>*n**d*</sup>
-    and 3<sup>*r**d*</sup> order derivatives, (\[1×150\] dimension for
+-   *average reflectance*, its 1<sup>*st*</sup>, 2<sup>*nd*</sup>
+    and 3<sup>*rd*</sup> order derivatives, (\[1×150\] dimension for
     each, \[1×600\] in total),
 
 -   discrete wavelet transforms of *average reflectance* with Meyer
@@ -201,12 +202,12 @@ features from it. The list of the features is as follows:
     *detail* coefficients (\[1×300\] dims. in total),
 
 -   for each channel (*c*) of a field patch (*P*), singular value
-    decomposition (SVD) has been conducted:  
-    $P\_{(w \\times h)} &= U \\Sigma V^{T}$, in which *Σ* is square
-    diagonal of size \[*r*×*r*\] where *r* ≤ *m**i**n*{*w*, *h*}. The
-    first 5 diagonal values (*σ*<sub>1</sub>, *σ*<sub>2</sub>,
-    *σ*<sub>3</sub>, *σ*<sub>4</sub>, *σ*<sub>5</sub> ∈ *Σ*) from each
-    channel are selected as features (\[1×750\] dims. in total),
+decomposition (SVD) has been conducted:  
+$P\_{(w \\times h)} &= U \\Sigma V^{T}$, in which *Σ* is square diagonal
+of size \[*r*×*r*\] where *r* ≤ *m**i**n*{*w*, *h*}. The first 5
+diagonal values (*σ*<sub>1</sub>, *σ*<sub>2</sub>, *σ*<sub>3</sub>,
+*σ*<sub>4</sub>, *σ*<sub>5</sub> ∈ *Σ*) from each channel are selected
+as features (\[1×750\] dims. in total),
 
 -   the ratio of 1<sup>*s**t*</sup>, 2<sup>*n**d*</sup> diagonals:
     *σ*<sub>1</sub>/*σ*<sub>2</sub> (\[1×150\] dims.),
