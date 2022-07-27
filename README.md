@@ -118,39 +118,17 @@ About one third of the samples is composed of 11 × 11 px patches, and
 
 
 
-<div class="center">
-<div class="figure">
-div.figure {
-  float: right;
-  width: 30%;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-  border: thin silver solid;
-  margin: 0.5em;
-  padding: 0.5em;
+
+<style>
+.green {
+    color: green;
+    font-weight:700;
+    font-size: 30px;
 }
-<img src="/challenge_submission_team_eagleeyes/feature_examples/field_distribution.png" id="FIG:field_distribution"
-alt="" />
-<p class="caption">Distribution of dataset in terms of different patch
-sizes.</p>
-</div>
-</div>
+</style>
 
 <div class="center">
-<div class="figure">
-div.figure {
-  float: right;
-  width: 30%;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-  border: thin silver solid;
-  margin: 0.5em;
-  padding: 0.5em;
-}
+
 
 <figure>
 <img src="/challenge_submission_team_eagleeyes/feature_examples/field_distribution.png" id="FIG_field_distribution"
@@ -159,7 +137,7 @@ alt="Distribution of dataset in terms of different patch sizes." />
 different patch sizes.</figcaption>
 </figure>
 </div>
-</div>
+
 
 The training data provides ground truth for all four soil parameters.
 The target values for P<sub>2</sub>O<sub>5</sub> lie in the range of
