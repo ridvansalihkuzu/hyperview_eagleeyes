@@ -127,8 +127,10 @@ About one third of the samples is composed of 11 × 11 px patches, and
 alt="Distribution of dataset in terms of different patch sizes." />
 </figure>
 </div>
-<span style="color:orange;">Figure 1: Distribution of dataset in terms of
-different patch sizes.</span>
+
+<div align="center">
+<strong style="color: orange; opacity: 0.80;>Figure 1: Distribution of dataset in terms of different patch sizes.</strong>
+</div>
 
 
 The training data provides ground truth for all four soil parameters.
