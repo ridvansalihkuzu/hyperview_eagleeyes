@@ -366,9 +366,8 @@ and P<sub>2</sub>O<sub>5</sub> is predicted worst (0.874).
 <strong style="color: orange; opacity: 0.80;">
 Table 1: Cross validation with RF (the lower score is better).</strong>
 </p>
-<div class="adjustbox">
-<p align="center">
-<div id="TAB_random_forest_scores">
+<div class="adjustbox" align="center">
+<div id="TAB_random_forest_scores" align="center">
 
 |            **Field Edge (pixel)**            | **\# of Fields** |  **P2O5**   |   **K**   |  **Mg**   |  **pH**   | **Average** |
 |:--------------------------------------------:|:----------------:|:-----------:|:---------:|:---------:|:---------:|:-----------:|
@@ -384,7 +383,7 @@ Table 1: Cross validation with RF (the lower score is better).</strong>
 
 
 </div>
-</p>
+
 </div>
 
 
