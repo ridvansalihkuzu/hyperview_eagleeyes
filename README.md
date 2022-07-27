@@ -170,9 +170,11 @@ to represent 150 spectral bands.
 
 <div class="center">
 <figure>
-<img  align="center" src="/challenge_submission_team_eagleeyes/feature_examples/eaglepaper_reflectance.png"
+<p align="center">
+<img src="/challenge_submission_team_eagleeyes/feature_examples/eaglepaper_reflectance.png"
 id="FIG_average_reflectance"
 alt="Comparison of average reflectance for different agricultural fields for each soil parameter." />
+</p>
 </figure>
 </div>
 
