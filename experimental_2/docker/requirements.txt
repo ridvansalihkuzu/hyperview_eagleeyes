@@ -1,0 +1,13 @@
+matplotlib
+tqdm
+pandas
+scikit-learn
+scipy
+seaborn
+pyproj==2.6.0
+tensorflow==2.8.0
+tfa-nightly
+albumentations==1.1.0
+xgboost
+PyWavelets
+optuna

@@ -1,0 +1,16 @@
+ftfy
+regex
+tqdm
+torch
+torchvision
+optuna
+scikit-learn
+matplotlib
+pandas
+scipy
+seaborn
+pyproj==2.6.0
+albumentations==1.1.0
+xgboost
+PyWavelets
+optuna
