@@ -167,13 +167,16 @@ As mentioned in Section [2](#sec_data_set), the samples are
 (*w*), and height (*h*) have varying sizes, but channel (*c*) is fixed
 to represent 150 spectral bands.
 
-<div style="text-align:center">
+<p align="center">
+<div class="center">
 <figure>
 <img src="/challenge_submission_team_eagleeyes/feature_examples/eaglepaper_reflectance.png"
 id="FIG_average_reflectance"
 alt="Comparison of average reflectance for different agricultural fields for each soil parameter." />
 </figure>
 </div>
+</p>
+
 <center><strong style="color: orange; opacity: 0.80;">
 Figure 3: Comparison of average reflectance for
 different agricultural fields for each soil parameter.</strong></center>
