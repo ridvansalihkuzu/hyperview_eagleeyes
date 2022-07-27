@@ -219,19 +219,19 @@ as features (\[1×750\] dims. in total),
 
 To sum up, for each field patch, a \[1×2400\] dimensional feature array
 is extracted. Some of those features for different agricultural fields
-are illustrated in Figure [\[fig:feature-engineering\]][1]. For data
+are illustrated in Figure [4][fig_feature_engineering]. For data
 augmentation, 1% random Gaussian noise is added to both input features
 and target values.
 
 <div class="figure*">
 
-<img src="figures/1st_derivative.png" alt="image" />
+<img src="/challenge_submission_team_eagleeyes/feature_examples/1st_derivative.png" alt="image" />
 
-<img src="figures/wavelet_approximation.png" alt="image" />
+<img src="/challenge_submission_team_eagleeyes/feature_examples/wavelet_approximation.png" alt="image" />
 
-<img src="figures/s1.png" alt="image" />
+<img src="/challenge_submission_team_eagleeyes/feature_examples/s1.png" alt="image" />
 
-<img src="figures/fft_s0_real.png" alt="image" />
+<img src="/challenge_submission_team_eagleeyes/feature_examples/fft_s0_real.png" alt="image" />
 
 </div>
 
