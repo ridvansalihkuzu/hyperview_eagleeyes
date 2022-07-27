@@ -148,7 +148,6 @@ alt="Distribution of target values for each soil parameter." />
 </div>
 <center><strong style="color: orange; opacity: 0.80;">Figure 2: Distribution of target values for each
 soil parameter.</strong></center>
-
 &nbsp;
 <br />
 
@@ -163,24 +162,25 @@ utilized for validating our approach.
 
 #### Feature engineering for traditional ML approaches
 
-As mentioned in Section [\[sec:data-set\]][1], the samples are
+As mentioned in Section [2](#sec_data_set), the samples are
 3-dimensional patches with dimension (*w* × *h* × *c*) where width
 (*w*), and height (*h*) have varying sizes, but channel (*c*) is fixed
 to represent 150 spectral bands.
 
 <div class="center">
-
 <figure>
-<img src="figures/eaglepaper_reflectance.png"
-id="FIG:average-reflectance"
+<img src="/challenge_submission_team_eagleeyes/feature_examples/eaglepaper_reflectance.png"
+id="FIG_average_reflectance"
 alt="Comparison of average reflectance for different agricultural fields for each soil parameter." />
-<figcaption aria-hidden="true">Comparison of average reflectance for
-different agricultural fields for each soil parameter.</figcaption>
 </figure>
-
 </div>
+<center><strong style="color: orange; opacity: 0.80;">
+Figure 3: Comparison of average reflectance for
+different agricultural fields for each soil parameter.</strong></center>
+&nbsp;
+<br />
 
-Figure [1][] shows the average reflectance as a function of wavelength
+Figure [3](#FIG_average_reflectance) shows the average reflectance as a function of wavelength
 for the samples with minimum and maximum value of the respective soil
 parameter. These average reflectance curves are remarkably dissimilar
 for different values of the target variable. Thus, we use the average
