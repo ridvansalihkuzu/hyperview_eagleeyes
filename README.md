@@ -32,7 +32,7 @@ in 29th IEEE International Conference on Image Processing (IEEE ICIP 2022), Bord
 
 ## INSTALLATION AND RUNNING
 
-### Deep Learning based Approaches
+### for Deep Learning based Approaches
 If you want to run the project on docker containers, pull the customly built images for this project:
 ```bash
 $ docker pull ridvansalih/clip:latest
@@ -54,13 +54,13 @@ in order to run them.
 
 **NOTE:** Please be sure that the arguments given to `main_hyper_view_training.py` scripts in each experiment folder are valid for your hardware limitations. 
 
-### Classical Machine Learning based Approaches
+### for Classical Machine Learning based Approaches
 
-As classical machine learning approach, we have applied to Random Forests, Extreme Boosting and K-nearest Neighbor based
+Among classical machine learning approach, we have applied to Random Forests, Extreme Boosting and K-nearest Neighbor based
 regresssion algorithms. However, Random Forest has outperformed the others, that is why our fine-tuning is based mostly on Random Forest
-as you can see the details in folder [experimental_3](experimental_3). In order to run Random Forest:
+as you can see the details in folder [experimental_3](experimental_3). In order to run the Random Forest:
 
-* **Use conda interactive:** create environment from [ai4eo_hyper.yml](experimental_3/random_forest_b), activate environment `ai4eo_hyper` and finally run script `r_train.py`:
+* **Use conda interactive:** create environment from [ai4eo_hyper.yml](experimental_3/random_forest_b), activate environment `ai4eo_hyper` and run the script:
     ```bash
     $ conda env create -f ai4eo_hyper.yml
     $ conda activate ai4eo_hyper
