@@ -136,7 +136,7 @@ skewness, while the Mg and pH values are more Gaussian distributed.
 Besides, pH measurements are mostly clustered in the intervals of 0.1.
 
 <div class="center">
-
+<a id="FIG_field_distribution" />
 <figure>
 <img src="figures/target_distribution.png" id="FIG:target_distribution"
 alt="Distribution of target values for each soil parameter." />
