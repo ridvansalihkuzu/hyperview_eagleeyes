@@ -224,7 +224,7 @@ augmentation, 1% random Gaussian noise is added to both input features
 and target values.
 
 <div class="figure*">
-
+<p align="center">
 <img src="/challenge_submission_team_eagleeyes/feature_examples/1st_derivative.png" width="350"  alt="image" />
 
 <img src="/challenge_submission_team_eagleeyes/feature_examples/wavelet_approximation.png" width="350"  alt="image" />
@@ -232,7 +232,7 @@ and target values.
 <img src="/challenge_submission_team_eagleeyes/feature_examples/s1.png" width="350"  alt="image" />
 
 <img src="/challenge_submission_team_eagleeyes/feature_examples/fft_s0_real.png" width="350"  alt="image" />
-
+</p>
 </div>
 
 #### Feature engineering for deep learning approaches
