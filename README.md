@@ -237,8 +237,10 @@ and target values.
 </p>
 </figure>
 </div>
+<p align="center">
 <center><strong style="color: orange; opacity: 0.80;">
 Figure 4: Selected additional features derived from the agricultural field patches.</strong></center>
+/p>
 
 &nbsp;
 <br />
