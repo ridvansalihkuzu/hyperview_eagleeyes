@@ -95,11 +95,11 @@ on-board the Intuition-1 satellite.
 
 In this manuscript, we present the solution to the <span class="smallcaps">AI4EO Hyperview</span> challenge developed by Team
 <span class="smallcaps">EagleEyes</span>. Section [2](#sec_data_set) discusses the
-hyperspectral image dataset, Section [3](#sec:methods) covers feature
+hyperspectral image dataset, Section [3](#sec_methods) covers feature
 engineering and experimental protocols for different learning
-strategies, and Section [4](#sec:results) presents the preliminary
+strategies, and Section [4](#sec_results) presents the preliminary
 performance results for predicting the given four soil properties.
-Eventually, we conclude in Section [5](#sec:discussion) and give an
+Eventually, we conclude in Section [5](#sec_discussion) and give an
 outlook on future work.
 
 ## <a id="sec_data_set" /> 2. Dataset  
@@ -147,7 +147,7 @@ soil parameter.</figcaption>
 </div>
 
 
-## 3. Experimental Framework <a name="sec:methods"></a> 
+## <a id="sec_methods" /> 3. Experimental Framework 
 
 In this section, we present the feature engineering approaches,
 experimental protocols for different learning strategies and metrics
@@ -312,7 +312,7 @@ $$\\mathrm{MSE\_{algo}}^{(i)}
     (p_j^{(i)} - \\hat p_j ^{(i)})^2
     .$$
 
-## 4. Results and Discussion <a name="sec:results"></a> 
+## <a id="sec_results" /> 4. Results and Discussion 
 
 Among our experiments listed in Section
 [\[SUBSEC:exploited-models\]][1], the best performing ones on the public
@@ -437,7 +437,7 @@ parameters.</figcaption>
 
 </div>
 
-## 5. Conclusion and Future Work <a name="sec:discussion"></a> 
+## 5. <a id="sec_discussion" /> Conclusion and Future Work 
 
 In this paper, we demonstrated our solution to the <span
 class="smallcaps">AI4EO Hyperview</span> challenge which seeks for the
