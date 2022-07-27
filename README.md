@@ -24,10 +24,10 @@ in 29th IEEE International Conference on Image Processing (IEEE ICIP 2022), Bord
 
 * The starter pack notebook provided by the Challenge Organization Committee is given under folder [challenge_official_starter_pack](challenge_official_starter_pack/starter_pack.ipynb).
 * The final submission of the **Team Eagle Eyes** is given under folder [challenge_submission_eagleeyes](challenge_submission_eagleeyes).
-* The Vision Transformer (ViT-L/14) based soil parameter estimation experiments are given under folder [experimental_1](experimental_1).
-* The Swin Transformer (Swin-T) and other DNN based soil parameter estimation experiments are given under folder [experimental_2](experimental_2).
-* The Random Forest and other classical machine learning based soil parameter estimation experiments are given under folder [experimental_3](experimental_3).
-* The PSE+LTAE based soil parameter estimation experiments are given under folder [experimental_4](experimental_4).
+* The codes for Vision Transformer (ViT-L/14) based soil parameter estimation experiments are given under folder [experimental_1](experimental_1).
+* The codes for Swin Transformer (Swin-T) and other DNN based soil parameter estimation experiments are given under folder [experimental_2](experimental_2).
+* The codes for Random Forests and other classical machine learning based soil parameter estimation experiments are given under folder [experimental_3](experimental_3).
+* The codes for PSE+LTAE based soil parameter estimation experiments are given under folder [experimental_4](experimental_4).
 
 
 ## INSTALLATION AND RUNNING
@@ -39,7 +39,7 @@ $ docker pull ridvansalih/clip:latest
 $ docker pull ridvansalih/hyperview:latest
 ```
 
-If you want to run the project on singularity containers, convert the docker images to singularity images as described below:
+If you want to run the project on singularity containers, convert the docker images to singularity ones as described below:
 ```bash
 $ export SINGULARITY_CACHEDIR=$(mktemp -d -p ${PWD})
 $ export SINGULARITY_TMPDIR=$(mktemp -d -p ${PWD})
@@ -47,7 +47,7 @@ $ singularity pull clip_latest.sif docker://ridvansalih/clip:latest
 $ singularity pull hyperview_latest.sif docker://hyperview:latest
 ```
 
-After having the docker images, you can refer to the `bash` scripts (e.g. `script_run_docker.sh`, `script_run_singular.sh`) under the experiment folders
+After having the docker or singularity images, you can refer to the `bash` scripts (e.g. `script_run_docker.sh`, `script_run_singular.sh`) under the experiment folders
 in order to run them.
 
 **NOTE:** Please be sure that you download the data and update the training and test folder paths in the `bash` scripts. 
@@ -57,8 +57,8 @@ in order to run them.
 ### for Classical Machine Learning based Approaches
 
 Among classical machine learning approach, we have applied to Random Forests, Extreme Boosting and K-nearest Neighbor based
-regresssion algorithms. However, Random Forest has outperformed the others, that is why our fine-tuning is based mostly on Random Forest
-as you can see the details in folder [experimental_3](experimental_3). In order to run the Random Forest:
+regresssion algorithms. However, Random Forests algorith has outperformed the others, that is why our fine-tuning is based mostly on Random Forest
+as you can see the details in folder [experimental_3](experimental_3). In order to run the Random Forests:
 
 * **Use conda interactive:** create environment from [ai4eo_hyper.yml](experimental_3/random_forest_b), activate environment `ai4eo_hyper` and run the script:
     ```bash
