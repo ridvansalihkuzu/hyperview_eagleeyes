@@ -129,11 +129,12 @@ alt="Distribution of dataset in terms of different patch sizes." />
 </div>
 <center><strong style="color: orange; opacity: 0.80;">Figure 1: Distribution of dataset in terms of different patch sizes.</strong></center>
 
+<br />
 
 The training data provides ground truth for all four soil parameters.
 The target values for P<sub>2</sub>O<sub>5</sub> lie in the range of
 [20.3−325], for K in [21.1−625], for Mg in [26.8−400], and for pH
-in [5.6−7.8]. As shown in Figure [2](FIG_target_distribution), for P<sub>2</sub>O<sub>5</sub>
+in [5.6−7.8]. As shown in Figure [2](#FIG_target_distribution), for P<sub>2</sub>O<sub>5</sub>
 and K, the target values follow a log-normal distribution with positive
 skewness, while the Mg and pH values are more Gaussian distributed.
 Besides, pH measurements are mostly clustered in the intervals of 0.1.
@@ -146,7 +147,7 @@ alt="Distribution of target values for each soil parameter." />
 </div>
 <center><strong style="color: orange; opacity: 0.80;">Figure 2: Distribution of target values for each
 soil parameter.</strong></center>
-
+<br />
 
 
 ## <a id="sec_methods" /> 3. Experimental Framework 
