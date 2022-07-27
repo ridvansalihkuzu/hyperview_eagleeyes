@@ -116,6 +116,28 @@ boundaries of the agricultural fields. As shown in Figure
 About one third of the samples is composed of 11 × 11 px patches, and
 60% of the patches are less than 50 px wide.
 
+
+
+<div class="center">
+<div class="figure">
+div.figure {
+  float: right;
+  width: 30%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+<img src="/challenge_submission_team_eagleeyes/feature_examples/field_distribution.png" id="FIG:field_distribution"
+alt="" />
+<p class="caption">Distribution of dataset in terms of different patch
+sizes.</p>
+</div>
+</div>
+
 <div class="center">
 <div class="figure">
 div.figure {
