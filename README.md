@@ -27,10 +27,12 @@ in 29th IEEE International Conference on Image Processing (IEEE ICIP 2022), Bord
 * The Vision Transformer (ViT-L/14) based soil parameter estimation experiments are given under folder [experimental_1](experimental_1).
 * The Swin Transformer (Swin-T) and other DNN based soil parameter estimation experiments are given under folder [experimental_2](experimental_2).
 * The Random Forest and other classical machine learning based soil parameter estimation experiments are given under folder [experimental_3](experimental_3).
+* The PSE+LTAE based soil parameter estimation experiments are given under folder [experimental_4](experimental_4).
 
 
 ## INSTALLATION AND RUNNING
 
+### Deep Learning based Approaches
 If you want to run the project on docker containers, pull the customly built images for this project:
 ```bash
 $ docker pull ridvansalih/clip:latest
@@ -51,6 +53,31 @@ in order to run them.
 **NOTE:** Please be sure that you download the data and update the training and test folder paths in the `bash` scripts. 
 
 **NOTE:** Please be sure that the arguments given to `main_hyper_view_training.py` scripts in each experiment folder are valid for your hardware limitations. 
+
+### Classical Machine Learning based Approaches
+
+As classical machine learning approach, we have applied to Random Forests, Extreme Boosting and K-nearest Neighbor based
+regresssion algorithms. However, Random Forest has outperformed the others, that is why our fine-tuning is based mostly on Random Forest
+as you can see the details in folder [experimental_3](experimental_3). In order to run Random Forest:
+
+* **Use conda interactive:** create environment from [ai4eo_hyper.yml](experimental_3/random_forest_b), activate environment `ai4eo_hyper` and finally run script `r_train.py`:
+    ```bash
+    $ conda env create -f ai4eo_hyper.yml
+    $ conda activate ai4eo_hyper
+    $ python3 r_train.py --in-data /2022-ai4eo_hyperview --submission-dir /ai4eo-hyperview/hyperview/submissions
+    ```
+* **Start a batch job:** 
+    ```bash
+    $ cd experimental_3/random_forest_b/jobs
+    $ sbatch submit_trial.sh
+    ```
+    
+* **Use Singularity & Docker:** 
+     ```bash
+    $ singularity pull docker://froukje/ai4eo-hyperview:rf
+    $ sbatch submit_singularity_trial.sh
+    ```
+    
 
 ## THE APPROACH
 
