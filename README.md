@@ -681,7 +681,7 @@ partition.
 In order to cite this study:
 ```
 @inproceedings{helmholtz_hyperview_2022,
-  title={Predicting Soil Parameters from Hyperspectral Images},
+  title={Predicting Soil Parameters from Hyperspectral Satellite Images},
   author={Albrecht, Frauke and Arnold, Caroline  and Kamath, Roshni and Konen, Kai and Kuzu, R{\i}dvan Salih},
   booktitle={2022 29th IEEE International Conference on Image Processing (ICIP)},
   pages={1--4},
