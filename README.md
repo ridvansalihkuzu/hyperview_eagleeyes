@@ -1,4 +1,4 @@
-# PREDICTING SOIL PARAMETERS FROM HYPERSPECTRAL SATELLITE IMAGES
+# PREDICTING SOIL PROPERTIES FROM HYPERSPECTRAL SATELLITE IMAGES
 
 This project includes the soil parameter estimation algorithms based on various machine
 machine learning approaches, which have been developed for the purpose of participating the [*HYPERVIEW: Seeing Beyond the Visible* Challenge](https://platform.ai4eo.eu/seeing-beyond-the-visible)
@@ -681,7 +681,7 @@ partition.
 In order to cite this study:
 ```
 @inproceedings{helmholtz_hyperview_2022,
-  title={Predicting Soil Parameters from Hyperspectral Satellite Images},
+  title={Predicting Soil Properties from Hyperspectral Satellite Images},
   author={Albrecht, Frauke and Arnold, Caroline  and Kamath, Roshni and Konen, Kai and Kuzu, R{\i}dvan Salih},
   booktitle={2022 29th IEEE International Conference on Image Processing (ICIP)},
   pages={1--4},
