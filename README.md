@@ -682,7 +682,7 @@ In order to cite this study:
 ```
 @inproceedings{helmholtz_hyperview_2022,
   title={Predicting Soil Properties from Hyperspectral Satellite Images},
-  author={Albrecht, Frauke and Arnold, Caroline  and Kamath, Roshni and Konen, Kai and Kuzu, R{\i}dvan Salih},
+  author={Kuzu, R{\i}dvan Salih and Albrecht, Frauke and Arnold, Caroline  and Kamath, Roshni and Konen, Kai},
   booktitle={2022 29th IEEE International Conference on Image Processing (ICIP)},
   pages={1--4},
   year={2022},
