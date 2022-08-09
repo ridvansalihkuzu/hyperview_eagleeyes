@@ -16,8 +16,8 @@ with the first place on the [public leader-board](https://platform.ai4eo.eu/seei
 For the further details, please refer to:
 
 <a id="1">[1]</a> 
-Albrecht, F., Arnold, C., Kamath, R.,Konen, K., Kuzu, R.S. (2022), 
-[Predicting Soil Parameters from Hyperspectral Satellite Images](challenge_submission_eagleeyes/hyperview_for_ICIP_camera_ready_eagleeyes.pdf), 
+Kuzu, R.S., Albrecht, F., Arnold, C., Kamath, R.,Konen, K. (2022), 
+[Predicting Soil Properties from Hyperspectral Satellite Images](challenge_submission_eagleeyes/hyperview_for_ICIP_camera_ready_eagleeyes.pdf), 
 in 29th IEEE International Conference on Image Processing (IEEE ICIP 2022), Bordeaux, France.
 
 ## FOLDER STRUCTURE
