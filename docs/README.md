@@ -11,23 +11,23 @@ The members of the **Team Eagle Eyes** building this solution for the HYPERVIEW 
 * [Roshni Kamath](https://www.helmholtz.ai/themenmenue/our-research/consultant-teams/helmholtz-ai-consultants-fzj/index.html) - Helmholtz AI consultant @ Julich Supercomputing Centre (FZJ)
 * [Kai Konen](https://www.helmholtz.ai/themenmenue/our-research/consultant-teams/helmholtz-ai-consultants-dlr/index.html) - Helmholtz AI consultant @ German Aerospace Center (DLR)
 
-[The submission file](challenge_submission_eagleeyes/hyperview-main-submission_eagleeyes.ipynb) of the **Team Eagle Eyes** has improved upon the challange baseline by %21.9,
+[The submission file](../challenge_submission_eagleeyes/hyperview-main-submission_eagleeyes.ipynb) of the **Team Eagle Eyes** has improved upon the challange baseline by %21.9,
 with the first place on the [public leader-board](https://platform.ai4eo.eu/seeing-beyond-the-visible/leaderboard). 
 For the further details, please refer to:
 
 <a id="1">[1]</a> 
 Kuzu, R.S., Albrecht, F., Arnold, C., Kamath, R.,Konen, K. (2022), 
-[Predicting Soil Properties from Hyperspectral Satellite Images](challenge_submission_eagleeyes/hyperview_for_ICIP_camera_ready_eagleeyes.pdf), 
+[Predicting Soil Properties from Hyperspectral Satellite Images](../challenge_submission_eagleeyes/hyperview_for_ICIP_camera_ready_eagleeyes.pdf), 
 in 29th IEEE International Conference on Image Processing (IEEE ICIP 2022), Bordeaux, France.
 
 ## FOLDER STRUCTURE
 
-* The starter pack notebook provided by the Challenge Organization Committee is given under folder [challenge_official_starter_pack](challenge_official_starter_pack/starter_pack.ipynb).
-* The final submission of the **Team Eagle Eyes** is given under folder [challenge_submission_eagleeyes](challenge_submission_eagleeyes).
-* The codes for Vision Transformer (ViT-L/14) based soil parameter estimation experiments are given under folder [experimental_1](experimental_1).
-* The codes for Swin Transformer (Swin-T) and other DNN based soil parameter estimation experiments are given under folder [experimental_2](experimental_2).
-* The codes for Random Forests and other classical machine learning based soil parameter estimation experiments are given under folder [experimental_3](experimental_3).
-* The codes for PSE+LTAE based soil parameter estimation experiments are given under folder [experimental_4](experimental_4).
+* The starter pack notebook provided by the Challenge Organization Committee is given under folder [challenge_official_starter_pack](../challenge_official_starter_pack/starter_pack.ipynb).
+* The final submission of the **Team Eagle Eyes** is given under folder [challenge_submission_eagleeyes](../challenge_submission_eagleeyes).
+* The codes for Vision Transformer (ViT-L/14) based soil parameter estimation experiments are given under folder [experimental_1](../experimental_1).
+* The codes for Swin Transformer (Swin-T) and other DNN based soil parameter estimation experiments are given under folder [experimental_2](../experimental_2).
+* The codes for Random Forests and other classical machine learning based soil parameter estimation experiments are given under folder [experimental_3](../experimental_3).
+* The codes for PSE+LTAE based soil parameter estimation experiments are given under folder [experimental_4](../experimental_4).
 
 
 ## INSTALLATION AND RUNNING
@@ -58,9 +58,9 @@ in order to run them.
 
 Among classical machine learning approach, we have applied to Random Forests, Extreme Boosting and K-nearest Neighbor based
 regresssion algorithms. However, Random Forests algorith has outperformed the others, that is why our fine-tuning is based mostly on Random Forest
-as you can see the details in folder [experimental_3](experimental_3). In order to run the Random Forests:
+as you can see the details in folder [experimental_3](../experimental_3). In order to run the Random Forests:
 
-* **Use conda interactive:** create environment from [ai4eo_hyper.yml](experimental_3/random_forest_b), activate environment `ai4eo_hyper` and run the script:
+* **Use conda interactive:** create environment from [ai4eo_hyper.yml](../experimental_3/random_forest_b), activate environment `ai4eo_hyper` and run the script:
     ```bash
     $ conda env create -f ai4eo_hyper.yml
     $ conda activate ai4eo_hyper
@@ -149,7 +149,7 @@ About one third of the samples is composed of 11 × 11 px patches, and
 
 <div class="center">
 <figure>
-<img src="/challenge_submission_eagleeyes/feature_examples/field_distribution.png" id="FIG_field_distribution"
+<img src="12_field_distribution.png" id="FIG_field_distribution"
 alt="Distribution of dataset in terms of different patch sizes." />
 </figure>
 </div>
@@ -170,7 +170,7 @@ Besides, pH measurements are mostly clustered in the intervals of 0.1.
 
 <div class="center">
 <figure>
-<img src="/challenge_submission_eagleeyes/feature_examples/target_distribution.png" id="FIG_target_distribution"
+<img src="14_target_distribution.png" id="FIG_target_distribution"
 alt="Distribution of target values for each soil parameter." />
 </figure>
 </div>
@@ -201,7 +201,7 @@ to represent 150 spectral bands.
 <div class="center">
 <figure>
 <p align="center">
-<img src="/challenge_submission_eagleeyes/feature_examples/eaglepaper_reflectance.png"
+<img src="10_eaglepaper_reflectance.png"
 id="FIG_average_reflectance"
 alt="Comparison of average reflectance for different agricultural fields for each soil parameter." />
 </p>
@@ -257,13 +257,13 @@ and target values.
 <figure>
 <p align="center">
 
-<img src="/challenge_submission_eagleeyes/feature_examples/1st_derivative.png" width="400" id="FIG_feature_engineering" alt="image" />
+<img src="1_1st_derivative.png" width="400" id="FIG_feature_engineering" alt="image" />
 
-<img src="/challenge_submission_eagleeyes/feature_examples/wavelet_approximation.png" width="400"  alt="image" />
+<img src="8_wavelet_approximation.png" width="400"  alt="image" />
 
-<img src="/challenge_submission_eagleeyes/feature_examples/s1.png" width="400"  alt="image" />
+<img src="7_s1.png" width="400"  alt="image" />
 
-<img src="/challenge_submission_eagleeyes/feature_examples/fft_s0_real.png" width="400"  alt="image" />
+<img src="5_fft_s0_real.png" width="400"  alt="image" />
 </p>
 </figure>
 </div>
@@ -522,7 +522,7 @@ those exceeding 850 nm are considered to be most important.
 <div class="center">
 <figure>
 <p align="center">
-<img src="/challenge_submission_eagleeyes/feature_examples/feature_weights.png" id="FIG_feature_weights"
+<img src="11_feature_weights.png" id="FIG_feature_weights"
 alt="Feature importance weights for RF regressor." />
 
 </p>
@@ -539,7 +539,7 @@ Figure 5: Feature importance weights for RF regressor.</strong>
 <div class="center">
 <figure>
 <p align="center">
-<img src="/challenge_submission_eagleeyes/feature_examples/channel_weights.png" id="FIG_channel_weights"
+<img src="3_channel_weights.png" id="FIG_channel_weights"
 alt="Hyperspectral band importances for RF regressor." />
 </p>
 </figure>
@@ -643,7 +643,7 @@ hard to estimate correctly.
 
 <div class="center">
 <figure>
-<img src="/challenge_submission_eagleeyes/feature_examples/out_prediction.png" id="FIG_pred_vs_target"
+<img src="13_out_prediction.png" id="FIG_pred_vs_target"
 alt="Ground-truths vs predicted soil parameters." />
 </figure>
 </div>
