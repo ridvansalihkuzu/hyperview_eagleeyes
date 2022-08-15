@@ -362,6 +362,10 @@ The evaluation metric takes into account the improvement upon the
 baseline of predicting the average of each soil parameter
 (MSE<sub>bl</sub>). For a given algorithm, it is calculated as:
 
+<img src="https://render.githubusercontent.com/render/math?math=score=^{i \pi} = -1">
+
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+
 <p><span class="math display">$$\mathrm{Score} = \frac 1 4
                    \sum\limits_{i=1}^{4}
                    \frac{\mathrm{MSE_{algo}}^{(i)}}{\mathrm{MSE_{bl}}^{(i)}},
