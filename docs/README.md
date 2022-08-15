@@ -1,3 +1,7 @@
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # PREDICTING SOIL PROPERTIES FROM HYPERSPECTRAL SATELLITE IMAGES
 
 This project includes the soil parameter estimation algorithms based on various machine
