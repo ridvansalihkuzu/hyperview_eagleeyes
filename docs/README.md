@@ -22,17 +22,17 @@ in 29th IEEE International Conference on Image Processing (IEEE ICIP 2022), Bord
 
 ## FOLDER STRUCTURE
 
-* The starter pack notebook provided by the Challenge Organization Committee is given under folder [challenge_official_starter_pack](../challenge_official_starter_pack/starter_pack.ipynb).
-* The final submission of the **Team Eagle Eyes** is given under folder [challenge_submission_eagleeyes](../challenge_submission_eagleeyes).
-* The codes for Vision Transformer (ViT-L/14) based soil parameter estimation experiments are given under folder [experimental_1](../experimental_1).
-* The codes for Swin Transformer (Swin-T) and other DNN based soil parameter estimation experiments are given under folder [experimental_2](../experimental_2).
-* The codes for Random Forests and other classical machine learning based soil parameter estimation experiments are given under folder [experimental_3](../experimental_3).
-* The codes for PSE+LTAE based soil parameter estimation experiments are given under folder [experimental_4](../experimental_4).
+* The starter pack notebook provided by the Challenge Organization Committee is given under folder [challenge_official_starter_pack](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/challenge_official_starter_pack/starter_pack.ipynb).
+* The final submission of the **Team Eagle Eyes** is given under folder [challenge_submission_eagleeyes](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/challenge_submission_eagleeyes).
+* The codes for Vision Transformer (ViT-L/14) based soil parameter estimation experiments are given under folder [experimental_1](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/experimental_1).
+* The codes for Swin Transformer (Swin-T) and other DNN based soil parameter estimation experiments are given under folder [experimental_2](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/experimental_2).
+* The codes for Random Forests and other classical machine learning based soil parameter estimation experiments are given under folder [experimental_3](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/experimental_3).
+* The codes for PSE+LTAE based soil parameter estimation experiments are given under folder [experimental_4](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/experimental_4).
 
 
 ## INSTALLATION AND RUNNING
 
-### for Deep Learning based Approaches
+### a. for Deep Learning based Approaches
 If you want to run the project on docker containers, pull the customly built images for this project:
 ```bash
 $ docker pull ridvansalih/clip:latest
@@ -54,13 +54,13 @@ in order to run them.
 
 **NOTE:** Please be sure that the arguments given to `main_hyper_view_training.py` scripts in each experiment folder are valid for your hardware limitations. 
 
-### for Classical Machine Learning based Approaches
+### b. for Classical Machine Learning based Approaches
 
 Among classical machine learning approach, we have applied to Random Forests, Extreme Boosting and K-nearest Neighbor based
 regresssion algorithms. However, Random Forests algorith has outperformed the others, that is why our fine-tuning is based mostly on Random Forest
-as you can see the details in folder [experimental_3](../experimental_3). In order to run the Random Forests:
+as you can see the details in folder [experimental_3](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/experimental_3). In order to run the Random Forests:
 
-* **Use conda interactive:** create environment from [ai4eo_hyper.yml](../experimental_3/random_forest_b), activate environment `ai4eo_hyper` and run the script:
+* **Use conda interactive:** create environment from [ai4eo_hyper.yml](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/experimental_3/random_forest_b), activate environment `ai4eo_hyper` and run the script:
     ```bash
     $ conda env create -f ai4eo_hyper.yml
     $ conda activate ai4eo_hyper
@@ -154,7 +154,7 @@ alt="Distribution of dataset in terms of different patch sizes." />
 </figure>
 </div>
 <p align="center">
-<strong style="color: orange; opacity: 0.80;">Figure 1: Distribution of dataset in terms of different patch sizes.</strong>
+<strong style="color: red; opacity: 0.80;">Figure 1: Distribution of dataset in terms of different patch sizes.</strong>
 </p>&nbsp;
 
 &nbsp;
@@ -175,7 +175,7 @@ alt="Distribution of target values for each soil parameter." />
 </figure>
 </div>
 <p align="center">
-<strong style="color: orange; opacity: 0.80;">Figure 2: Distribution of target values for each
+<strong style="color: red; opacity: 0.80;">Figure 2: Distribution of target values for each
 soil parameter.</strong>
 </p>&nbsp;
 
@@ -208,7 +208,7 @@ alt="Comparison of average reflectance for different agricultural fields for eac
 </figure>
 </div>
 <p align="center">
-<strong style="color: orange; opacity: 0.80;">
+<strong style="color: red; opacity: 0.80;">
 Figure 3: Comparison of average reflectance for
 different agricultural fields for each soil parameter.</strong>
 </p>
@@ -268,7 +268,7 @@ and target values.
 </figure>
 </div>
 <p align="center">
-<strong style="color: orange; opacity: 0.80;">
+<strong style="color: red; opacity: 0.80;">
 Figure 4: Selected additional features derived from the agricultural field patches.</strong>
 </p>
 
@@ -395,7 +395,7 @@ and P<sub>2</sub>O<sub>5</sub> is predicted worst (0.874).
 
 
 <p align="center">
-<strong style="color: orange; opacity: 0.80;">
+<strong style="color: red; opacity: 0.80;">
 Table 1: Cross validation with RF (the lower score is better).</strong>
 </p>
 
@@ -530,7 +530,7 @@ alt="Feature importance weights for RF regressor." />
 </p>
 </figure>
 <p align="center">
-<strong style="color: orange; opacity: 0.80;">
+<strong style="color: red; opacity: 0.80;">
 Figure 5: Feature importance weights for RF regressor.</strong>
 </p>
 </div>
@@ -546,7 +546,7 @@ alt="Hyperspectral band importances for RF regressor." />
 </p>
 </figure>
 <p align="center">
-<strong style="color: orange; opacity: 0.80;">
+<strong style="color: red; opacity: 0.80;">
 Figure 6: Hyperspectral band importances for RF regressor.</strong>
 </p>
 </div>
@@ -567,7 +567,7 @@ performs worse than RF on larger patches.
 
 
 <p align="center">
-<strong style="color: orange; opacity: 0.80;">
+<strong style="color: red; opacity: 0.80;">
 Table 2: Cross validation with hybrid regressor (RF + KNN).</strong>
 </p>
 
@@ -650,7 +650,7 @@ alt="Ground-truths vs predicted soil parameters." />
 </figure>
 </div>
 <p align="center">
-<strong style="color: orange; opacity: 0.80;">
+<strong style="color: red; opacity: 0.80;">
 Figure 7: Ground-truths vs predicted soil parameters.</strong>
 </p>
 
