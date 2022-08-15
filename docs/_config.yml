@@ -1,5 +1,17 @@
 theme: jekyll-theme-time-machine
 
 markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
 kramdown:
-  math_engine: mathjax
+input: GFM
+hard_wrap: false
+auto_ids: true
+footnote_nr: 1
+entity_output: as_char
+toc_levels: 1..6
+smart_quotes: lsquo,rsquo,ldquo,rdquo
+enable_coderay: false
