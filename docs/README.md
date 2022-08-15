@@ -363,6 +363,25 @@ The evaluation metric takes into account the improvement upon the
 baseline of predicting the average of each soil parameter
 (MSE<sub>bl</sub>). For a given algorithm, it is calculated as:
 
+<p><span class="math display">$$\mathrm{Score} = \frac 1 4
+                   \sum\limits_{i=1}^{4}
+                   \frac{\mathrm{MSE_{algo}}^{(i)}}{\mathrm{MSE_{bl}}^{(i)}},
+\,\, \textrm{ where:}$$</span></p>
+
+<p><span class="math display">$$\mathrm{Score} = \frac 1 4
+                   \sum\limits_{i=1}^{4}
+                   \frac{\mathrm{MSE_{algo}}^{(i)}}{\mathrm{MSE_{bl}}^{(i)}},
+\,\, \textrm{ where:}$$</span></p>
+
+$$\mathrm{Score} = \frac 1 4
+                   \sum\limits_{i=1}^{4}
+                   \frac{\mathrm{MSE_{algo}}^{(i)}}{\mathrm{MSE_{bl}}^{(i)}}, \,\, \textrm{ where:}$$
+
+$$\mathrm{Score} = \frac 1 4
+                   \sum\limits_{i=1}^{4}
+                   \frac{\mathrm{MSE_{algo}}^{(i)}}{\mathrm{MSE_{bl}}^{(i)}}, \,\, \textrm{ where:}$$
+
+
 $$\\mathrm{Score} = \\frac 1 4
                    \\sum\\limits\_{i=1}^{4}
                    \\frac{\\mathrm{MSE\_{algo}}^{(i)}}{\\mathrm{MSE\_{bl}}^{(i)}}, \\,\\, \\textrm{ where:}$$
