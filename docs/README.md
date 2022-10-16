@@ -11,14 +11,17 @@ The members of the **Team Eagle Eyes** building this solution for the HYPERVIEW 
 * [Roshni Kamath](https://www.helmholtz.ai/themenmenue/our-research/consultant-teams/helmholtz-ai-consultants-fzj/index.html) - Helmholtz AI consultant @ Julich Supercomputing Centre (FZJ)
 * [Kai Konen](https://www.helmholtz.ai/themenmenue/our-research/consultant-teams/helmholtz-ai-consultants-dlr/index.html) - Helmholtz AI consultant @ German Aerospace Center (DLR)
 
-[The submission file](../challenge_submission_eagleeyes/hyperview-main-submission_eagleeyes.ipynb) of the **Team Eagle Eyes** has improved upon the challange baseline by %21.9,
-with the first place on the [public leader-board](https://platform.ai4eo.eu/seeing-beyond-the-visible/leaderboard). 
+[The submission file](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/challenge_submission_eagleeyes/hyperview-main-submission_eagleeyes.ipynb) of the **Team Eagle Eyes** has improved upon the challange baseline by %21.9,
+with the first place on the [public and private leader-board](https://platform.ai4eo.eu/seeing-beyond-the-visible/leaderboard). 
 For the further details, please refer to:
 
 <a id="1">[1]</a> 
 Kuzu, R.S., Albrecht, F., Arnold, C., Kamath, R.,Konen, K. (2022), 
-[Predicting Soil Properties from Hyperspectral Satellite Images](../challenge_submission_eagleeyes/hyperview_for_ICIP_camera_ready_eagleeyes.pdf), 
+[Predicting Soil Properties from Hyperspectral Satellite Images](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/challenge_submission_eagleeyes/hyperview_for_ICIP_camera_ready_eagleeyes.pdf), 
 in 29th IEEE International Conference on Image Processing (IEEE ICIP 2022), Bordeaux, France.
+
+![ICIP2022 Award Certificate](hyperview_award.png)
+
 
 ## FOLDER STRUCTURE
 
@@ -49,6 +52,7 @@ $ singularity pull hyperview_latest.sif docker://hyperview:latest
 
 After having the docker or singularity images, you can refer to the `bash` scripts (e.g. `script_run_docker.sh`, `script_run_singular.sh`) under the experiment folders
 in order to run them.
+
 
 **NOTE:** Please be sure that you download the data and update the training and test folder paths in the `bash` scripts. 
 
