@@ -3,7 +3,7 @@
 This project includes the soil parameter estimation algorithms based on various machine
 machine learning approaches, which have been developed for the purpose of participating the [*HYPERVIEW: Seeing Beyond the Visible* Challenge](https://platform.ai4eo.eu/seeing-beyond-the-visible)
 
-The members of the **Team Eagle Eyes** building this solution for the HYPERVIEW Challenge are:
+The members of the **Team EagleEyes** building this solution for the HYPERVIEW Challenge are:
 
 * [Ridvan Salih Kuzu](https://scholar.google.com/citations?hl=en&user=5492gRAAAAAJ) - Helmholtz AI consultant @ German Aerospace Center (DLR)
 * [Frauke Albrecht](https://www.helmholtz.ai/themenmenue/our-research/consultant-teams/helmholtz-ai-consultants-dkrz/index.html) - Helmholtz AI consultant @ German Climate Computing Centre (DKRZ)
