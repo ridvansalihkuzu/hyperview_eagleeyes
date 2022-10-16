@@ -11,7 +11,7 @@ The members of the **Team EagleEyes** building this solution for the HYPERVIEW C
 * [Roshni Kamath](https://www.helmholtz.ai/themenmenue/our-research/consultant-teams/helmholtz-ai-consultants-fzj/index.html) - Helmholtz AI consultant @ Julich Supercomputing Centre (FZJ)
 * [Kai Konen](https://www.helmholtz.ai/themenmenue/our-research/consultant-teams/helmholtz-ai-consultants-dlr/index.html) - Helmholtz AI consultant @ German Aerospace Center (DLR)
 
-[The submission file](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/challenge_submission_eagleeyes/hyperview-main-submission_eagleeyes.ipynb) of the **Team Eagle Eyes** has improved upon the challange baseline by %21.9,
+[The submission file](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/challenge_submission_eagleeyes/hyperview-main-submission_eagleeyes.ipynb) of the **Team EagleEyes** has improved upon the challange baseline by %21.9,
 with the first place on the [public and private leader-boards](https://platform.ai4eo.eu/seeing-beyond-the-visible/leaderboard). 
 For the further details, please refer to:
 
