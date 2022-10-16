@@ -12,7 +12,7 @@ The members of the **Team Eagle Eyes** building this solution for the HYPERVIEW 
 * [Kai Konen](https://www.helmholtz.ai/themenmenue/our-research/consultant-teams/helmholtz-ai-consultants-dlr/index.html) - Helmholtz AI consultant @ German Aerospace Center (DLR)
 
 [The submission file](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/challenge_submission_eagleeyes/hyperview-main-submission_eagleeyes.ipynb) of the **Team Eagle Eyes** has improved upon the challange baseline by %21.9,
-with the first place on the [public and private leader-board](https://platform.ai4eo.eu/seeing-beyond-the-visible/leaderboard). 
+with the first place on the [public and private leader-boards](https://platform.ai4eo.eu/seeing-beyond-the-visible/leaderboard). 
 For the further details, please refer to:
 
 <a id="1">[1]</a> 
@@ -94,7 +94,7 @@ K-nearest neighbor regressors that exploit the average spectral
 reflectance, as well as derived features such as gradients, wavelet
 coefficients, and Fourier transforms. The solution is computationally
 lightweight and improves upon the challenge baseline by 21.9%, with the
-first place on the public leaderboard. In addition, we discuss neural
+first place on the  and private leaderboards. In addition, we discuss neural
 network architectures and potential future improvements.
 
 **Index Terms—** hyperspectral images, random forests, artificial neural networks, soil parameter estimation, regression.
