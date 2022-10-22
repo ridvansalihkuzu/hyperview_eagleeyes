@@ -1,3 +1,4 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/predicting-soil-properties-from-hyperspectral/seeing-beyond-the-visible-on-hyperview)](https://paperswithcode.com/sota/seeing-beyond-the-visible-on-hyperview?p=predicting-soil-properties-from-hyperspectral)
 # PREDICTING SOIL PROPERTIES FROM HYPERSPECTRAL SATELLITE IMAGES
 
 This project includes the soil parameter estimation algorithms based on various machine
