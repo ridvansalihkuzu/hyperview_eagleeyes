@@ -16,9 +16,9 @@ with the first place on the [public and private leader-boards](https://platform.
 For the further details, please refer to:
 
 <a id="1">[1]</a> 
-Kuzu, R.S., Albrecht, F., Arnold, C., Kamath, R.,Konen, K. (2022), 
+Kuzu, R. S., Albrecht, F., Arnold, C., Kamath, R., & Konen, K. (2022, October), 
 [Predicting Soil Properties from Hyperspectral Satellite Images](https://github.com/ridvansalihkuzu/hyperview_eagleeyes/tree/master/challenge_submission_eagleeyes/hyperview_for_ICIP_camera_ready_eagleeyes.pdf), 
-in 29th IEEE International Conference on Image Processing (IEEE ICIP 2022), Bordeaux, France.
+In 2022 IEEE International Conference on Image Processing (ICIP) (pp. 4296-4300). IEEE.
 
 ![ICIP2022 Award Certificate](hyperview_award.png)
 
@@ -686,14 +686,16 @@ partition.
 
 In order to cite this study:
 ```
-@inproceedings{helmholtz_hyperview_2022,
-  title={Predicting Soil Properties from Hyperspectral Satellite Images},
-  author={Kuzu, R{\i}dvan Salih and Albrecht, Frauke and Arnold, Caroline  and Kamath, Roshni and Konen, Kai},
-  booktitle={2022 29th IEEE International Conference on Image Processing (ICIP)},
-  pages={1--4},
+@INPROCEEDINGS{9897254,
+  author={Kuzu, Rıdvan Salih and Albrecht, Frauke and Arnold, Caroline and Kamath, Roshni and Konen, Kai},
+  booktitle={2022 IEEE International Conference on Image Processing (ICIP)}, 
+  title={Predicting Soil Properties from Hyperspectral Satellite Images}, 
   year={2022},
-  organization={IEEE}
-}
+  volume={},
+  number={},
+  pages={4296-4300},
+  doi={10.1109/ICIP46576.2022.9897254}}
+  
 ```
 
 
